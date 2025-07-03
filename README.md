@@ -1,4 +1,4 @@
-# AWS Crypto Pipeline Analysis 📊
+# AWS Crypto Pipeline Analysis 📊 (em construção)
 
 Este projeto é um pipeline de dados end-to-end para coletar, armazenar, transformar e consultar cotações de criptomoedas usando ferramentas da AWS.
 Os dados serão coletados da Coingecko que disponibiliza um API gratuito com atualização near real-time.
