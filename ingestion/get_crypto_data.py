@@ -27,7 +27,7 @@ def save_to_s3(data, crypto_id):
     s3_key = f"{RAW_PATH}/year={today[:4]}/month={today[5:7]}/day={today[8:10]}/{filename}"
 
     s3.put_object(
-        Bucket=BUCKET_NAME,
+        Bucket='crypto-pipeline-dados-mathvieger',
         Key=s3_key,
         Body=json.dumps(data),
         ContentType='application/json'
