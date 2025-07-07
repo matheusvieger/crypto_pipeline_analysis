@@ -7,7 +7,7 @@ import os
 # Configurações
 CRYPTO_ID = 'bitcoin'
 CURRENCY = 'usd'
-BUCKET_NAME = 'krypto-koin-case'
+BUCKET_NAME = 'crypto-pipeline-dados-mathvieger'
 RAW_PATH = 'raw'
 
 # Conecta ao S3
@@ -32,7 +32,7 @@ def save_to_s3(data, crypto_id):
         Body=json.dumps(data),
         ContentType='application/json'
     )
-    print(f"Arquivo enviado para o S3: s3://{BUCKET_NAME}/{s3_key}")
+    print(f"Arquivo enviado para o S3: s3://{'crypto-pipeline-dados-mathvieger'}/{s3_key}")
 
 if __name__ == "__main__":
     try:
